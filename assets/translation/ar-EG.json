@@ -1,0 +1,237 @@
+{
+  "register": {
+    "continue_with_Email": "أكمل باستخدام الايميل",
+    "appBar_title": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة السر",
+    "create_account": "إنشاء حساب جديد",
+    "phone": "رقم الهاتف",
+    "checkbox_text": "نعم اريد استلام عروض وخصومات",
+    "terms": "من خلال إنشاء حساب فإنك توافق على الخصوصية وشروط الاستخدام",
+    "first_name": "الإسم الأول",
+    "last_name": "الإسم الأخير",
+    "confirm_password": "تأكيد كلمة السر",
+    "password_match": "من فضلك تأكد من أن كلمتي المرور متشابهتين",
+    "success": "تم التسجيل بنجاح",
+    "choose_area": "اختر المنطقة",
+    "please_choose_area": "الرجاء اختيار منطقة!",
+    "please_choose_city": "الرجاء اختيار المدينة!",
+    "choose_city": "اخترالمدينة"
+  },
+  "login": {
+    "appBar_title": "تسجيل الدخول",
+    "continue_with_email": "أكمل باستخدام الإيميل",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "create_account": "إنشاء حساب جديد",
+    "login": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة السر",
+    "success": "تم تسجيل الدخول بنجاح",
+    "failed": "البريد الإلكتروني أو كلمة المرور خاطئة",
+    "no_account": "ليس لديك حساب؟"
+  },
+  "forget_password": {
+    "appBar_title": "استعادة الحساب",
+    "reset_your_password": "اعد ضبط كلمه السر",
+    "email": "أدخل البريد الإلكتروني هنا"
+  },
+  "reset_password": {
+    "appBar_title": "إعادة تعيين كلمة المرور",
+    "confirm_new_password": "نأكيد كلمة المرور الجديدة",
+    "confirm": "تأكيد",
+    "new_password": "كلمة المرور الجديدة",
+    "make_sure": "تأكد من أن كلمتي المرور متشابهتين"
+  },
+  "home": {
+    "search_bar": "بتدور علي إيه ؟",
+    "popular_food": "الطعام المنتشر",
+    "view_more": "المزيد",
+    "brands": "العلامات التجارية الشهيرة بالقرب منك",
+    "special_offers": "عروض خاصه",
+    "delivery": "التوصيل :",
+    "nothing": "لا يوجد شيء لعرضه هنا!"
+  },
+  "food": {
+    "all_stores": "جميع المتاجر",
+    "no_results": "لم يتم العثور على نتائج"
+  },
+  "restaurant": {
+    "info": "معلومات",
+    "reviews": "التقييمات",
+    "offer_of_the_restaurant": "عروض المتجر",
+    "close_at": "يغلق",
+    "open_at": "يفتح",
+    "delivery": "رسوم التوصيل :",
+    "egp": "جنيه",
+    "price": "السعر : "
+  },
+  "order": {
+    "cart_button_title": "إضافة إلى العربة",
+    "add_notes": "إضافة ملاحظات ...",
+    "choose_size": "اختر الحجم",
+    "extras": "إضافات",
+    "write": "اكتب أي أشياء خاصة تريد القيام بها.",
+    "optional": "(اختياري)"
+  },
+  "checkout": {
+    "appBar_title": "الدفع",
+    "full_name": "الإسم بالكامل",
+    "phone_number": "رقم الهاتف",
+    "button_title": "التالي",
+    "address": "العنوان"
+  },
+  "payment_done": {},
+  "notification": {
+    "appBar_title": "الإشعارات"
+  },
+  "vouchers": {
+    "appBar_title": "القسائم",
+    "active": "نشط",
+    "used": "مستعمل",
+    "expired": "منتهي",
+    "no_vouchers_available": "لا توجد قسائم متاحة",
+    "voucher_text": "يمكنك الحصول على قسائم عن طريق استبدال نقاط المكافآت الخاصة بك",
+    "all": "الكل",
+    "discount": "خصم",
+    "get_your_voucher": "احصل على قسيمتك",
+    "use_the_code": "استخدم الكود",
+    "start_at": "تبدأ في",
+    "end_at": "ينتهي في"
+  },
+  "help": {
+    "appBar_title": "المساعدة",
+    "title": "كيف يمكن أن نساعدك؟",
+    "hi": "أهلا"
+  },
+  "search": {
+    "search_bar": "بتدور علي إيه ؟",
+    "popular_search": "البحث المتداول",
+    "start_search": "ابدأ البحث",
+    "search_empty": "يجب ألا يكون البحث فارغًا",
+    "no_results": "لم يتم العثور على نتائج!"
+  },
+  "settings": {
+    "appBar_title": "الإعدادات",
+    "notifications": "الإشعارات",
+    "lang": "اللغة",
+    "country": "البلد"
+  },
+  "filter": {
+    "popular_filters": "تصنيفات شائعة",
+    "deals_and_offers": "العروض و الخصومات",
+    "sort_by": "التصنيف حسب",
+    "appBar_title": "التصنيفات",
+    "apply": "تطبيق",
+    "clear_all": "حذف الكل"
+  },
+  "restaurant_info": {
+    "appBar_title": "معلومات",
+    "restaurant_area": "محيط المطعم",
+    "minimum_order": "اقل قيمه للطلب",
+    "delivery_fee": "تكلفة التوصيل",
+    "preorder": "الحجز المسبق",
+    "payment_options": "طرق الدفع",
+    "opining_hours": "ساعات العمل",
+    "rate": "تقييم",
+    "taxes": "الضريبة"
+  },
+  "reviews": {
+    "appBar_title": "التقييمات",
+    "order_packing": "تغليف الطلب",
+    "value_for_money": "القيمه مقابل المال",
+    "delivery_time": "وقت التوصيل",
+    "quality_of_food": "جودة الأكل",
+    "rating_and_reviews": "التقييم و المراجعة",
+    "read_more_reviews": "مزيد من التقييمات",
+    "based": "أعتمادا على ",
+    "review": "تقييم"
+  },
+  "offers": {
+    "appBar_title": "العروض",
+    "more_details": "تفاصيل",
+    "no_offers": "عذرا ، لا توجد عروض الآن!"
+  },
+  "orders": {
+    "appBar_title": "الطلبات",
+    "recent": "الطلبات الأخيرة",
+    "old": "الطلبات القديمة",
+    "total": "المجموع : ",
+    "payment": "الدفع : ",
+    "state": "الحالة : ",
+    "no_orders": "لا توجد طلبات هنا"
+  },
+  "user_details": {
+    "appBar_title": "تفاصيل المستخدم",
+    "email": "البريد الإلكتروني",
+    "phone_number": "رقم الهاتف",
+    "password": "كلمة السر",
+    "edit": "تعديل",
+    "address": "العنوان",
+    "change_password": "تغيير كلمة المرور",
+    "first_name": "الإسم الأول",
+    "last_name": "الإسم الأخير",
+    "security_information": "معلومات الأمان",
+    "update": "تحديث",
+    "change_area": "تغيير المنطقة",
+    "your_area": "منطقتك : ",
+    "info_updated": "تم تحديث المعلومات بنجاح.",
+    "image_updated": "تم تحديث الصورة بنجاح."
+  },
+  "filter_result": {
+    "search_bar": "بتدور علي إيه ؟"
+  },
+  "drawer": {
+    "contact_us": "تواصل معنا",
+    "log_out": "تسجيل الخروج",
+    "about_us": "عنّا",
+    "get_help": "المساعدة",
+    "vouchers": "قسائم",
+    "payment": "الدفع",
+    "notifications": "الإشعارات",
+    "offers": "العروض",
+    "your_orders": "طلباتك",
+    "location": "الموقع",
+    "home": "الرئيسية",
+    "profile": "الملف الشخصي",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "logout_success": "تم تسجيل الخروج بنجاح"
+  },
+  "cart": {
+    "appBar_title": "العربة",
+    "order_details": "تفاصيل الطلب",
+    "delivery_price": "سعر التوصيل :",
+    "special_services": "خدمات خاصة :",
+    "total": "المبلغ الكلي",
+    "checkout_button_title": "الدفع",
+    "add_item_button_title": "إضافة المزيد",
+    "no_orders": "لا توجد طلبات في عربة التسوق."
+  },
+  "validation": {
+    "first_name": "لا يجب أن يكون الاسم الاول فارغ",
+    "last_name": "لا يجب أن يكون الاسم الاخير فارغ",
+    "email_empty": "يجب ألا يكون البريد الإلكتروني فارغ",
+    "email_valid": "يرجى إدخال بريد إلكتروني الصحيح",
+    "phone_valid": "يجب أن يتكون رقم الهاتف من 11 رقم",
+    "phone_empty": "يجب ألا يكون الهاتف فارغ",
+    "password_valid": "يجب أن تتكون كلمة المرور من 6 أرقام على الأقل",
+    "password_empty": "يجب ألا تكون كلمة المرور فارغة",
+    "white_space": "لا يمكن أن تحتوي كلمة المرور على مسافة."
+  },
+  "change_password": {
+    "appBar_title": "تغيير كلمة المرور",
+    "change_password": "تغيير كلمة المرور",
+    "old_password": "كلمة السر القديمه",
+    "new_password": "كلمة السرالجديدة",
+    "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+    "password_update_success": "تم تحديث كلمة المرور بنجاح",
+    "wrong_password": "كلمة المرور خاطئة",
+    "some_error": "حدث خطأ ما"
+  },
+  "change_area": {
+    "appBar_title": "تغيير المنطقة",
+    "area": "المنطقة :",
+    "city": "المدينة :",
+    "area_updated": "تم تحديث المنطقة بنجاح."
+  }
+}

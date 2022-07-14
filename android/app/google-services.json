@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935607995991",
+    "project_id": "pasabahce-d1741",
+    "storage_bucket": "pasabahce-d1741.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935607995991:android:221365aaaed3bc877a9d12",
+        "android_client_info": {
+          "package_name": "com.example.pasabahce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRvo_1lWMdDPna-A3qyIYSs6RNyOeKEY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
