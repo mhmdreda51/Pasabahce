@@ -1,14 +1,14 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pasabahce/constants/app_colors.dart';
 import 'package:pasabahce/core/router/router.dart';
-import 'package:pasabahce/view/intro_screens/Models/intro_model.dart';
 import 'package:pasabahce/view/intro_screens/componants/dots.dart';
 import 'package:pasabahce/view/intro_screens/componants/intro_page_view.dart';
 import 'package:pasabahce/view/login/login_screen.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../widgets/main_button.dart';
+import '../register/register.dart';
 import 'cubit/intro_screens_cubit.dart';
 
 class IntroScreens extends StatelessWidget {
@@ -35,7 +35,7 @@ class IntroScreens extends StatelessWidget {
                       ? Column(
                           children: [
                             MainButton(
-                              text: "Sign in",
+                              text: "intro.sign_in".tr(),
                               borderColor: Colors.white,
                               width: 240,
                               onTap: () =>
@@ -43,25 +43,17 @@ class IntroScreens extends StatelessWidget {
                             ),
                             const SizedBox(height: 15),
                             MainButton(
-                              text: "Create Account",
+                              text: "intro.create_account".tr(),
                               backgroundColor: AppColors.introColor,
                               borderColor: Colors.transparent,
                               width: 240,
-                              onTap: () {
-                                if (cubit.isLast) {
-                                  cubit.submit();
-                                } else {
-                                  cubit.controller.nextPage(
-                                    duration: const Duration(milliseconds: 500),
-                                    curve: Curves.decelerate,
-                                  );
-                                }
-                              },
+                              onTap: () => MagicRouter.navigateTo(
+                                  const RegisterScreen()),
                             ),
                           ],
                         )
                       : MainButton(
-                          text: "NEXT",
+                          text: "intro.start_button".tr(),
                           backgroundColor: AppColors.introColor,
                           borderColor: Colors.transparent,
                           width: 240,

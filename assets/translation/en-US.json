@@ -1,22 +1,24 @@
 {
+  "intro": {
+    "start_button": "Next",
+    "sign_in": "Sign in",
+    "create_account": "Create account"
+  },
   "register": {
-    "continue_with_Email": "Continue with Email",
+    "create_your_account": "Create your account",
+    "register_button": "Sign up",
     "appBar_title": "Register",
     "email": "Email",
     "password": "Password",
+    "user_name": "Username",
     "create_account": "Create account",
     "phone": "Phone number",
-    "checkbox_text": "Yes , I want to receive offers and discounts.",
-    "terms": "By creating an account you agree to the Privacy and to the terms of Use",
-    "first_name": "First name",
-    "last_name": "Last name",
-    "confirm_password": "Confirm password",
-    "password_match": "Please make sure both passwords match",
+    "register_text": "After your registration is complete, you can see our opportunity products.",
     "success": "Register success.",
-    "please_choose_area": "Please choose area!",
-    "choose_area": "Choose area",
-    "please_choose_city": "Please choose city!",
-    "choose_city": "Choose city"
+    "continue_with_facebook": "Continue with Facebook",
+    "continue_with_google": "Continue with Google",
+    "already_have_an_account": "Already have an account?",
+    "sign_in": "Sign in"
   },
   "login": {
     "appBar_title": "Login",

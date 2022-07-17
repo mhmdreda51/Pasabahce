@@ -1,22 +1,24 @@
 {
+  "intro": {
+    "start_button": "التالى",
+    "sign_in": "تسجبل الدخول",
+    "create_account": "انشاء حساب"
+  },
   "register": {
-    "continue_with_Email": "أكمل باستخدام الايميل",
+    "create_your_account": "أنشئ حسابك",
     "appBar_title": "إنشاء حساب",
     "email": "البريد الإلكتروني",
     "password": "كلمة السر",
     "create_account": "إنشاء حساب جديد",
     "phone": "رقم الهاتف",
-    "checkbox_text": "نعم اريد استلام عروض وخصومات",
+    "user_name": "اسم االمستخدم",
+    "register_text": "بعد اكتمال التسجيل ، يمكنك مشاهدة منتجات الفرصة لدينا.",
     "terms": "من خلال إنشاء حساب فإنك توافق على الخصوصية وشروط الاستخدام",
-    "first_name": "الإسم الأول",
-    "last_name": "الإسم الأخير",
-    "confirm_password": "تأكيد كلمة السر",
-    "password_match": "من فضلك تأكد من أن كلمتي المرور متشابهتين",
     "success": "تم التسجيل بنجاح",
-    "choose_area": "اختر المنطقة",
-    "please_choose_area": "الرجاء اختيار منطقة!",
-    "please_choose_city": "الرجاء اختيار المدينة!",
-    "choose_city": "اخترالمدينة"
+    "register_button": "اشتراك",
+    "continue_with_facebook": "المتابعة بواسطة فيس بوك",
+    "continue_with_google": "المتابعة بواسطة جوجل",
+    "sign_in": "تسجيل الدخول"
   },
   "login": {
     "appBar_title": "تسجيل الدخول",
