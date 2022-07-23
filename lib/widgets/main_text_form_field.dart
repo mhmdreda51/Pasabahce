@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pasabahce/constants/app_colors.dart';
+import 'package:pasabahce/constants/size_config.dart';
 
 class MainTextFormField extends StatelessWidget {
   const MainTextFormField({
@@ -26,9 +27,9 @@ class MainTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         label: Text(
           label,
-          style: const TextStyle(
+          style: TextStyle(
             color: AppColors.textFormLabel,
-            fontSize: 16,
+            fontSize: getScreenWidth(16),
           ),
         ),
         filled: true,

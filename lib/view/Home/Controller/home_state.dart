@@ -10,3 +10,9 @@ class SignOutLoading extends HomeState {}
 class SignOutSuccess extends HomeState {}
 
 class SignOutFailed extends HomeState {}
+
+class CheckConnectionLoading extends HomeState {}
+
+class InternetConnected extends HomeState {}
+
+class InternetDisconnected extends HomeState {}

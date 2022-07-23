@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants/app_colors.dart';
+import '../constants/size_config.dart';
 
 class AuthHeader extends StatelessWidget {
   const AuthHeader({Key? key, required this.title, required this.subTitle})
@@ -15,23 +16,23 @@ class AuthHeader extends StatelessWidget {
       children: [
         Text(
           title,
-          style: const TextStyle(
-            fontSize: 28,
+          style: TextStyle(
+            fontSize: getScreenWidth(28),
             color: Colors.black,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(
-            top: 5,
-            right: 32,
-            left: 32,
-            bottom: 30,
+          padding: EdgeInsets.only(
+            top: getScreenHeight(5),
+            right: getScreenWidth(32),
+            left: getScreenWidth(32),
+            bottom: getScreenHeight(30),
           ),
           child: Text(
             subTitle,
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 14,
+            style: TextStyle(
+              fontSize: getScreenWidth(14),
               color: AppColors.darkGray,
             ),
           ),

@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pasabahce/constants/size_config.dart';
 
 import '../constants/app_colors.dart';
 
@@ -11,16 +13,19 @@ class LoadingWidget extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(top: 350),
+          padding: EdgeInsets.only(top: getScreenHeight(400)),
           child: Column(
-            children: const [
-              CupertinoActivityIndicator(color: AppColors.brown, radius: 20),
-              SizedBox(height: 15),
+            children: [
+              CupertinoActivityIndicator(
+                color: AppColors.brown,
+                radius: getScreenWidth(20),
+              ),
+              SizedBox(height: getScreenHeight(15)),
               Text(
-                "LOADING",
+                "loading_widget.loading".tr(),
                 style: TextStyle(
                   color: AppColors.brown,
-                  fontSize: 14,
+                  fontSize: getScreenWidth(14),
                 ),
               ),
             ],

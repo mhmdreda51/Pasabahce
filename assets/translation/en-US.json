@@ -28,7 +28,6 @@
     "create_account": "Create an account",
     "login": "Sign in",
     "sign_up": "Sign up",
-
     "email_or_username": "Username or email",
     "password": "Password",
     "success": "Login success.",
@@ -216,15 +215,15 @@
     "no_orders": "No orders in cart."
   },
   "validation": {
-    "first_name": "first name must not be empty",
-    "last_name": "last name must not be empty",
-    "email_empty": "email must not be empty",
-    "email_valid": "please enter a valid email",
-    "phone_valid": "phone number must be 11 digits",
-    "phone_empty": "phone must not be empty",
-    "password_valid": "password must be at least 6 digits",
-    "password_empty": "password must not be empty",
-    "white_space": "The password cannot have space."
+    "error_wrong": "Something went wrong!",
+    "enter_txt": "Enter Your Phone number",
+    "enterPhoneVer": "Please enter you phone correctly",
+    "wrong_code": "Code is Not correct!",
+    "enter_sms": "Enter SMS verification code",
+    "password_ver": "Please enter your password correctly",
+    "enter_ver_invalid": "Please enter you email correctly",
+    "enter_ver": "Please enter you email",
+    "enter_name_ver": "Please enter you Full Name"
   },
   "change_password": {
     "appBar_title": "Change Password",
@@ -236,10 +235,11 @@
     "wrong_password": "Wrong password",
     "some_error": "Some error happened"
   },
-  "change_area": {
-    "appBar_title": "Change Area",
-    "area": "Area :",
-    "city": "City :",
-    "area_updated": "Area updated Successfully."
+  "loading_widget": {
+    "loading": "loading"
+  },
+  "connectivity": {
+    "not_net_title": "No internet connection",
+    "not_net_msg": "Please check your internet connection as you can enjoy using app normally,This warning will disappear when you reconnect to the Internet"
   }
 }

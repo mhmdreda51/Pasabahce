@@ -27,6 +27,11 @@ dependencies:
   cloud_firestore: ^3.3.0
   google_sign_in: ^5.4.0
   flutter_facebook_auth: ^4.4.0+1
+  pin_code_fields: ^7.3.0
+  flutter_svg: any
+  url_launcher: any
+  one_context: ^1.1.1
+  device_info: ^2.0.2
 
 dev_dependencies:
   flutter_test:

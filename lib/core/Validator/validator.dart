@@ -3,7 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 class Validator {
   static String? validateName(String? value) {
     if (value!.isEmpty || value.length < 5) {
-      return 'enter_name_ver'.tr();
+      return 'validation.enter_name_ver'.tr();
     }
     return null;
   }
@@ -30,18 +30,18 @@ class Validator {
 
   static String? validatePassword(String? value) {
     if (value!.isEmpty) {
-      return 'password_ver'.tr();
+      return 'validation.password_ver'.tr();
     } else if (value.length < 6) {
-      return 'password_ver'.tr();
+      return 'validation.password_ver'.tr();
     }
     return null;
   }
 
   static String? validatePhone(String? value) {
     if (value!.isEmpty) {
-      return 'enterPhoneVer'.tr();
+      return 'validation.enterPhoneVer'.tr();
     } else if (value.length < 10) {
-      return 'enterPhoneVer'.tr();
+      return 'validation.enterPhoneVer'.tr();
     }
     return null;
   }
@@ -51,9 +51,9 @@ class Validator {
         r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
     RegExp regExp = RegExp(pattern);
     if (value!.isEmpty) {
-      return 'enter_ver'.tr();
+      return 'validation.enter_ver'.tr();
     } else if (!regExp.hasMatch(value)) {
-      return 'enter_ver_invalid'.tr();
+      return 'validation.enter_ver_invalid'.tr();
     } else {
       return null;
     }
@@ -70,6 +70,7 @@ class Validator {
         return 'enter_ver_invalid'.tr();
       }
     }
+    return null;
   }
 
   static String? validateAddress(String? value) {

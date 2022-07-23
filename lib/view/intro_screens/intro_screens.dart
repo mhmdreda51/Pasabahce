@@ -7,6 +7,7 @@ import 'package:pasabahce/view/intro_screens/componants/dots.dart';
 import 'package:pasabahce/view/intro_screens/componants/intro_page_view.dart';
 import 'package:pasabahce/view/login/login_screen.dart';
 
+import '../../constants/size_config.dart';
 import '../../widgets/main_button.dart';
 import '../register/register.dart';
 import 'cubit/intro_screens_cubit.dart';
@@ -14,6 +15,7 @@ import 'cubit/intro_screens_cubit.dart';
 class IntroScreens extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return BlocProvider(
       create: (context) => IntroScreensCubit(),
       child: BlocBuilder<IntroScreensCubit, IntroScreensState>(
@@ -22,10 +24,10 @@ class IntroScreens extends StatelessWidget {
           return Scaffold(
             backgroundColor: Colors.black,
             body: Padding(
-              padding: const EdgeInsets.only(
-                left: 30,
-                right: 30,
-                bottom: 50,
+              padding: EdgeInsets.only(
+                left: getScreenWidth(30),
+                right: getScreenWidth(30),
+                bottom: getScreenHeight(50),
               ),
               child: Column(
                 children: <Widget>[
@@ -38,18 +40,19 @@ class IntroScreens extends StatelessWidget {
                               MainButton(
                                 text: "intro.sign_in".tr(),
                                 borderColor: Colors.white,
-                                width: 235,
+                                width: getScreenWidth(240),
                                 onTap: () =>
                                     MagicRouter.navigateTo(const LoginScreen()),
                               ),
-                              const SizedBox(height: 10),
+                              SizedBox(height: getScreenHeight(10)),
                               MainButton(
                                 text: "intro.create_account".tr(),
                                 backgroundColor: AppColors.introColor,
                                 borderColor: Colors.transparent,
-                                width: 235,
+                                width: getScreenWidth(240),
                                 onTap: () => MagicRouter.navigateTo(
-                                    const RegisterScreen()),
+                                  const RegisterScreen(),
+                                ),
                               ),
                             ],
                           ),
@@ -58,7 +61,7 @@ class IntroScreens extends StatelessWidget {
                           text: "intro.start_button".tr(),
                           backgroundColor: AppColors.introColor,
                           borderColor: Colors.transparent,
-                          width: 240,
+                          width: getScreenWidth(240),
                           onTap: () {
                             if (cubit.isLast) {
                               cubit.submit();

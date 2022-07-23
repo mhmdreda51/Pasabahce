@@ -4,7 +4,7 @@ class SocialButton extends StatelessWidget {
   const SocialButton({
     Key? key,
     required this.text,
-    this.height = 44,
+    this.height = 46,
     this.width = double.infinity,
     this.borderRadius = 30,
     this.borderColor = Colors.transparent,
@@ -34,13 +34,12 @@ class SocialButton extends StatelessWidget {
       height: height,
       child: TextButton(
         style: TextButton.styleFrom(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius),
-            side: BorderSide(color: borderColor),
-          ),
-          backgroundColor: backgroundColor,
-          padding: EdgeInsets.only(left: 30,right: 30)
-        ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(borderRadius),
+              side: BorderSide(color: borderColor),
+            ),
+            backgroundColor: backgroundColor,
+            padding: EdgeInsets.only(left: 30, right: 30)),
         onPressed: onTap,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

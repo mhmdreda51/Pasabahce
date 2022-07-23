@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:pasabahce/constants/size_config.dart';
 
 import '../../../core/Validator/validator.dart';
 import '../../../widgets/main_text_form_field.dart';
@@ -20,7 +21,7 @@ class LoginForm extends StatelessWidget {
           controller: cubit.emailOrUserController,
           label: "login.email_or_username".tr(),
         ),
-        const SizedBox(height: 20),
+        SizedBox(height: getScreenHeight(20)),
         PasswordTextFormField(
           validator: Validator.validatePassword,
           controller: cubit.passwordController,

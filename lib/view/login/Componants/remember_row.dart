@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:pasabahce/constants/size_config.dart';
 import 'package:pasabahce/view/login/Controller/login_cubit.dart';
 
 import '../../../constants/app_colors.dart';
@@ -28,8 +29,8 @@ class RememberRow extends StatelessWidget {
             ),
             Text(
               "login.remember_me".tr(),
-              style: const TextStyle(
-                fontSize: 13,
+              style: TextStyle(
+                fontSize: getScreenWidth(13),
                 color: AppColors.blackColor,
               ),
             ),
@@ -38,8 +39,8 @@ class RememberRow extends StatelessWidget {
         GestureDetector(
           child: Text(
             "login.forgot_password".tr(),
-            style: const TextStyle(
-              fontSize: 13,
+            style: TextStyle(
+              fontSize: getScreenWidth(13),
               color: AppColors.blackColor,
             ),
           ),

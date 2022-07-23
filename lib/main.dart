@@ -3,8 +3,11 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:one_context/one_context.dart';
+import 'package:pasabahce/view/Home/Controller/home_cubit.dart';
 import 'package:pasabahce/view/Home/home_screen.dart';
 import 'package:pasabahce/view/intro_screens/intro_screens.dart';
+import 'package:pasabahce/widgets/interner_check_dialog.dart';
 
 import 'core/blocObserver/bloc_observer.dart';
 import 'core/cacheHelper/get_storage_cache_helper.dart';
@@ -55,15 +58,46 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Pasabahce',
-      debugShowCheckedModeBanner: false,
-      locale: context.locale,
-      supportedLocales: context.supportedLocales,
-      localizationsDelegates: context.localizationDelegates,
-      navigatorKey: navigatorKey,
-      onGenerateRoute: onGenerateRoute,
-      home: home,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => HomeCubit()..initializeConnectivity()),
+      ],
+      child: MultiBlocListener(
+        listeners: [
+          BlocListener<HomeCubit, HomeState>(listener: (context, state) {
+            if (state is InternetDisconnected) {
+              HomeCubit.get(context).isNetDialogShow = true;
+              print('InternetDisconnected');
+              Future.delayed(const Duration(milliseconds: 500), () {
+                //0.5 sec
+                OneContext().showDialog(
+                  barrierDismissible: false,
+                  builder: (context) =>
+                      const NoInternetDialog(canDismiss: false),
+                );
+              });
+            }
+            if (state is InternetConnected) {
+              if (HomeCubit.get(context).isNetDialogShow) {
+                print('InternetConnected');
+                OneContext().popDialog();
+                HomeCubit.get(context).isNetDialogShow = false;
+              }
+            }
+          }),
+        ],
+        child: MaterialApp(
+          title: 'Pasabahce',
+          builder: OneContext().builder,
+          debugShowCheckedModeBanner: false,
+          locale: context.locale,
+          supportedLocales: context.supportedLocales,
+          localizationsDelegates: context.localizationDelegates,
+          navigatorKey: navigatorKey,
+          onGenerateRoute: onGenerateRoute,
+          home: home,
+        ),
+      ),
     );
   }
 }

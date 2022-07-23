@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pasabahce/constants/size_config.dart';
 
 import '../constants/app_colors.dart';
 
@@ -34,9 +35,9 @@ class PasswordTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         label: Text(
           label,
-          style: const TextStyle(
+          style: TextStyle(
             color: AppColors.textFormLabel,
-            fontSize: 16,
+            fontSize: getScreenWidth(16),
           ),
         ),
         filled: true,
@@ -65,7 +66,7 @@ class PasswordTextFormField extends StatelessWidget {
           onPressed: onPressed,
           icon: Icon(
             icon,
-            size: 16,
+            size: getScreenWidth(16),
             color: iconColor,
           ),
         ),

@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pasabahce/constants/app_colors.dart';
+import 'package:pasabahce/constants/size_config.dart';
 import 'package:pasabahce/view/register/controller/register_cubit.dart';
 import 'package:pasabahce/widgets/main_button.dart';
 
+import '../../core/Keyboard Helper/keyboard.dart';
 import '../../core/router/router.dart';
 import '../../widgets/auth_header.dart';
 import '../../widgets/loading_widget.dart';
@@ -41,7 +43,7 @@ class RegisterScreen extends StatelessWidget {
                   appBar: mainAppBar(title: "register.appBar_title".tr()),
                   backgroundColor: Colors.black,
                   body: Padding(
-                    padding: const EdgeInsets.only(top: 15),
+                    padding: EdgeInsets.only(top: getScreenHeight(15)),
                     child: Container(
                       decoration: const BoxDecoration(
                         color: Colors.white,
@@ -50,9 +52,14 @@ class RegisterScreen extends StatelessWidget {
                           topLeft: Radius.circular(20),
                         ),
                       ),
-                      padding: const EdgeInsets.all(30),
-                      width: MediaQuery.of(context).size.height,
-                      height: MediaQuery.of(context).size.height,
+                      padding: EdgeInsets.only(
+                        top: getScreenHeight(30),
+                        bottom: getScreenHeight(30),
+                        right: getScreenWidth(30),
+                        left: getScreenWidth(30),
+                      ),
+                      width: SizeConfig.screenWidth,
+                      height: SizeConfig.screenHeight,
                       child: SingleChildScrollView(
                         child: Form(
                           key: cubit.registerFormKey,
@@ -68,7 +75,7 @@ class RegisterScreen extends StatelessWidget {
                                 text: "register.register_button".tr(),
                                 backgroundColor: AppColors.brown,
                                 borderColor: Colors.transparent,
-                                width: 240,
+                                width: getScreenWidth(240),
                                 onTap: () {
                                   if (cubit.registerFormKey.currentState!
                                       .validate()) {
@@ -78,6 +85,7 @@ class RegisterScreen extends StatelessWidget {
                                       password: cubit.passwordController.text,
                                       phone: cubit.phoneController.text,
                                     );
+                                    KeyboardUtil.hideKeyboard(context);
                                   }
                                 },
                               ),

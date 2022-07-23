@@ -8,6 +8,8 @@ import 'package:pasabahce/view/Home/home_screen.dart';
 import 'package:pasabahce/view/login/Controller/login_cubit.dart';
 
 import '../../constants/app_colors.dart';
+import '../../constants/size_config.dart';
+import '../../core/Keyboard Helper/keyboard.dart';
 import '../../widgets/auth_header.dart';
 import '../../widgets/loading_widget.dart';
 import '../../widgets/main_app_bar.dart';
@@ -43,7 +45,7 @@ class LoginScreen extends StatelessWidget {
                   appBar: mainAppBar(title: "login.appBar_title".tr()),
                   backgroundColor: Colors.black,
                   body: Padding(
-                    padding: const EdgeInsets.only(top: 10),
+                    padding: EdgeInsets.only(top: getScreenHeight(10)),
                     child: Container(
                       decoration: const BoxDecoration(
                         color: Colors.white,
@@ -52,9 +54,14 @@ class LoginScreen extends StatelessWidget {
                           topLeft: Radius.circular(20),
                         ),
                       ),
-                      padding: const EdgeInsets.all(30),
-                      width: MediaQuery.of(context).size.height,
-                      height: MediaQuery.of(context).size.height,
+                      padding: EdgeInsets.only(
+                        left: getScreenWidth(30),
+                        right: getScreenWidth(30),
+                        top: getScreenHeight(40),
+                        bottom: getScreenHeight(30),
+                      ),
+                      width: SizeConfig.screenWidth,
+                      height: SizeConfig.screenHeight,
                       child: SingleChildScrollView(
                         child: Form(
                           key: cubit.loginFormKey,
@@ -66,14 +73,14 @@ class LoginScreen extends StatelessWidget {
                                 subTitle: "login.login_subtitle".tr(),
                               ),
                               LoginForm(cubit: cubit),
-                              const SizedBox(height: 10),
+                              SizedBox(height: getScreenHeight(10)),
                               RememberRow(cubit: cubit),
-                              const SizedBox(height: 30),
+                              SizedBox(height: getScreenHeight(30)),
                               MainButton(
                                 text: "login.login".tr(),
                                 backgroundColor: AppColors.brown,
                                 borderColor: Colors.transparent,
-                                width: 240,
+                                width: getScreenWidth(240),
                                 onTap: () {
                                   if (cubit.loginFormKey.currentState!
                                       .validate()) {
@@ -81,6 +88,7 @@ class LoginScreen extends StatelessWidget {
                                       email: cubit.emailOrUserController.text,
                                       password: cubit.passwordController.text,
                                     );
+                                    KeyboardUtil.hideKeyboard(context);
                                   }
                                 },
                               ),

@@ -4,7 +4,7 @@ class MainButton extends StatelessWidget {
   const MainButton({
     Key? key,
     required this.text,
-    this.height = 44,
+    this.height = 46,
     this.width = double.infinity,
     this.borderRadius = 30,
     this.borderColor = Colors.transparent,

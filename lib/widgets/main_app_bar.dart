@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../constants/size_config.dart';
 import '../core/router/router.dart';
 
 AppBar mainAppBar({required String title}) {
@@ -8,15 +9,15 @@ AppBar mainAppBar({required String title}) {
     elevation: 0.0,
     leading: IconButton(
       onPressed: () => MagicRouter.pop(),
-      icon: const Icon(Icons.arrow_back_sharp, size: 20),
+      icon: Icon(Icons.arrow_back_sharp, size: getScreenWidth(20)),
     ),
     title: Padding(
-      padding: const EdgeInsets.only(right: 35),
+      padding: EdgeInsets.only(right: getScreenWidth(35)),
       child: Center(
         child: Text(
           title,
-          style: const TextStyle(
-            fontSize: 13,
+          style: TextStyle(
+            fontSize: getScreenWidth(13),
           ),
         ),
       ),
