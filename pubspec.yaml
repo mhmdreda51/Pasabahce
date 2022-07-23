@@ -23,6 +23,10 @@ dependencies:
   easy_localization: ^3.0.1
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^9.2.0
+  fluttertoast: ^8.0.9
+  cloud_firestore: ^3.3.0
+  google_sign_in: ^5.4.0
+  flutter_facebook_auth: ^4.4.0+1
 
 dev_dependencies:
   flutter_test:

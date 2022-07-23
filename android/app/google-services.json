@@ -29,6 +29,13 @@
             {
               "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "935607995991-i1rkjhe95bq7fs89skdr0m04nmjpvfhd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pasabahce"
+              }
             }
           ]
         }

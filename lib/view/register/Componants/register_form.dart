@@ -2,7 +2,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:pasabahce/view/register/controller/register_cubit.dart';
 
+import '../../../core/Validator/validator.dart';
 import '../../../widgets/main_text_form_field.dart';
+import '../../../widgets/password_text_form_field.dart';
 
 class RegisterForm extends StatelessWidget {
   const RegisterForm({Key? key, required this.cubit}) : super(key: key);
@@ -14,27 +16,32 @@ class RegisterForm extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         MainTextFormField(
-          validator: () {},
+          validator: Validator.validateName,
           controller: cubit.userNameController,
           label: "register.user_name".tr(),
         ),
         const SizedBox(height: 20),
         MainTextFormField(
-          validator: () {},
+          validator: (value) => Validator.validateEmail(value),
           controller: cubit.emailController,
           label: "register.email".tr(),
         ),
         const SizedBox(height: 20),
-        MainTextFormField(
-          validator: () {},
+        PasswordTextFormField(
+          validator: (value) => Validator.validatePassword(value),
           controller: cubit.passwordController,
           label: "register.password".tr(),
+          isObscure: cubit.isPassword,
+          onPressed: () => cubit.changePasswordVisibility(),
+          icon: cubit.suffix,
+          iconColor: cubit.iconColor,
         ),
         const SizedBox(height: 20),
         MainTextFormField(
-          validator: () {},
+          validator: (value) => Validator.validatePhone(value),
           controller: cubit.phoneController,
           label: "register.phone".tr(),
+          isPhone: true,
         ),
         const SizedBox(height: 40),
       ],

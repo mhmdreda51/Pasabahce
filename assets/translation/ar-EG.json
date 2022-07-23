@@ -22,15 +22,20 @@
   },
   "login": {
     "appBar_title": "تسجيل الدخول",
-    "continue_with_email": "أكمل باستخدام الإيميل",
+    "login_title": "دعنا نسجل دخولك",
+    "login_subtitle": "مرحبًا بعودتك ، لقد افتقدناك !",
     "forgot_password": "نسيت كلمة المرور؟",
     "create_account": "إنشاء حساب جديد",
     "login": "تسجيل الدخول",
-    "email": "البريد الإلكتروني",
+    "sign_up": "إنشاء حساب",
+    "email_or_username": "اسم المستخدم أو البريد الالكتروني",
     "password": "كلمة السر",
     "success": "تم تسجيل الدخول بنجاح",
     "failed": "البريد الإلكتروني أو كلمة المرور خاطئة",
-    "no_account": "ليس لديك حساب؟"
+    "no_account": "ليس لديك حساب؟",
+    "remember_me": "تذكرنى",
+    "continue_with_facebook": "المتابعة بواسطة فيس بوك",
+    "continue_with_google": "المتابعة بواسطة جوجل"
   },
   "forget_password": {
     "appBar_title": "استعادة الحساب",

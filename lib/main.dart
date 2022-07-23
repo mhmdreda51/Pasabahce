@@ -1,7 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pasabahce/view/Home/home_screen.dart';
 import 'package:pasabahce/view/intro_screens/intro_screens.dart';
 
 import 'core/blocObserver/bloc_observer.dart';
@@ -16,6 +18,15 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //===============================================================
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  Widget? home;
+  FirebaseAuth.instance.userChanges().listen((user) {
+    if (user == null) {
+      home = IntroScreens();
+    } else {
+      home = const HomeScreen();
+    }
+    home ??= const HomeScreen();
+  });
   //===============================================================
   Bloc.observer = MyBlocObserver();
   //===============================================================
@@ -29,7 +40,7 @@ void main() async {
   //===============================================================
   runApp(
     EasyLocalization(
-      child: const MyApp(),
+      child: MyApp(home: home!),
       path: 'assets/translation',
       supportedLocales: const [Locale('en', 'US'), Locale('ar', 'EG')],
       fallbackLocale: const Locale('en', 'US'),
@@ -39,7 +50,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key, required this.home}) : super(key: key);
+  final Widget home;
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +63,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       navigatorKey: navigatorKey,
       onGenerateRoute: onGenerateRoute,
-      home: IntroScreens(),
+      home: home,
     );
   }
 }

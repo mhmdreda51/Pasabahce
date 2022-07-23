@@ -1,10 +1,12 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants/app_colors.dart';
+import '../constants/app_colors.dart';
 
-class RegisterHeader extends StatelessWidget {
-  const RegisterHeader({Key? key}) : super(key: key);
+class AuthHeader extends StatelessWidget {
+  const AuthHeader({Key? key, required this.title, required this.subTitle})
+      : super(key: key);
+  final String title;
+  final String subTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,7 @@ class RegisterHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          "register.create_your_account".tr(),
+          title,
           style: const TextStyle(
             fontSize: 28,
             color: Colors.black,
@@ -26,7 +28,7 @@ class RegisterHeader extends StatelessWidget {
             bottom: 30,
           ),
           child: Text(
-            "register.register_text".tr(),
+            subTitle,
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 14,

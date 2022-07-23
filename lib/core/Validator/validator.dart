@@ -1,37 +1,81 @@
+import 'package:easy_localization/easy_localization.dart';
+
 class Validator {
-  static String validateEmail(String value) {
-    String pattern = r'^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+';
-    RegExp regex = new RegExp(pattern);
-    if (!regex.hasMatch(value))
-      return 'Please enter a valid email address.';
-    else
-      return value;
+  static String? validateName(String? value) {
+    if (value!.isEmpty || value.length < 5) {
+      return 'enter_name_ver'.tr();
+    }
+    return null;
   }
 
-  static String validatePassword(String value) {
-    String pattern = r'^.{6,}$';
-    RegExp regex = new RegExp(pattern);
-    if (!regex.hasMatch(value))
-      return 'Password must be at least 6 characters.';
-    else
-      return value;
+  static String? validateEmpty(String? value) {
+    if (value!.isEmpty) {
+      return "Can't be empty";
+    }
+    return null;
   }
 
-  static String validateName(String value) {
-    String pattern = '!';
-    RegExp regex = new RegExp(pattern);
-    if (!regex.hasMatch(value))
-      return 'Please enter a name.';
-    else
-      return value;
+  static String? validateMobile(String? value) {
+    String pattern = r'(^[0-9]*$)';
+    RegExp regExp = RegExp(pattern);
+    if (value!.isEmpty) {
+      return "Mobile is Required";
+    } else if (value.length != 10) {
+      return "Mobile number must 10 digits";
+    } else if (!regExp.hasMatch(value)) {
+      return "Mobile Number must be digits";
+    }
+    return null;
   }
 
-  static String validateNumber(String value) {
-    String pattern = r'^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$';
-    RegExp regex = new RegExp(pattern);
-    if (!regex.hasMatch(value))
-      return 'Please enter a number.';
-    else
-      return value;
+  static String? validatePassword(String? value) {
+    if (value!.isEmpty) {
+      return 'password_ver'.tr();
+    } else if (value.length < 6) {
+      return 'password_ver'.tr();
+    }
+    return null;
+  }
+
+  static String? validatePhone(String? value) {
+    if (value!.isEmpty) {
+      return 'enterPhoneVer'.tr();
+    } else if (value.length < 10) {
+      return 'enterPhoneVer'.tr();
+    }
+    return null;
+  }
+
+  static String? validateEmail(String? value) {
+    String pattern =
+        r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+    RegExp regExp = RegExp(pattern);
+    if (value!.isEmpty) {
+      return 'enter_ver'.tr();
+    } else if (!regExp.hasMatch(value)) {
+      return 'enter_ver_invalid'.tr();
+    } else {
+      return null;
+    }
+  }
+
+  static String? validateEmailCorrect(String? value) {
+    String pattern =
+        r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+    RegExp regExp = RegExp(pattern);
+    if (value!.isEmpty) {
+      return null;
+    } else {
+      if (!regExp.hasMatch(value)) {
+        return 'enter_ver_invalid'.tr();
+      }
+    }
+  }
+
+  static String? validateAddress(String? value) {
+    if (value!.isEmpty || value.length < 5) {
+      return 'enter_address_ver'.tr();
+    }
+    return null;
   }
 }

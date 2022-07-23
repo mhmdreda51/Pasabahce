@@ -5,9 +5,10 @@ import 'package:pasabahce/view/register/controller/register_cubit.dart';
 import '../../../constants/app_colors.dart';
 import '../../../widgets/social_button.dart';
 
-class SocialColumn extends StatelessWidget {
-  const SocialColumn({Key? key, required this.cubit}) : super(key: key);
+class RegisterSocialColumn extends StatelessWidget {
+  const RegisterSocialColumn({Key? key, required this.cubit}) : super(key: key);
   final RegisterCubit cubit;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,13 +17,13 @@ class SocialColumn extends StatelessWidget {
         const SizedBox(height: 35),
         SocialButton(
           image: "assets/images/google.png",
-          onTap: () {},
           backgroundColor: Colors.transparent,
           borderColor: AppColors.brown,
           width: 240,
           text: "register.continue_with_google".tr(),
           textColor: AppColors.brown,
           imageColor: AppColors.brown,
+          onTap: () {},
         ),
         const SizedBox(height: 15),
         SocialButton(

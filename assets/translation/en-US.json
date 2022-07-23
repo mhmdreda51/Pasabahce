@@ -22,15 +22,21 @@
   },
   "login": {
     "appBar_title": "Login",
-    "continue_with_email": "Continue with email",
+    "login_title": "Let’s sign you in",
+    "login_subtitle": "Welcome back, you’ve been missed!",
     "forgot_password": "Forgot password?",
     "create_account": "Create an account",
-    "login": "Login",
-    "email": "Email",
+    "login": "Sign in",
+    "sign_up": "Sign up",
+
+    "email_or_username": "Username or email",
     "password": "Password",
     "success": "Login success.",
     "failed": "Email or password is wrong.",
-    "no_account": "Don't have account?"
+    "no_account": "Don't have account?",
+    "remember_me": "Remember me",
+    "continue_with_facebook": "Continue with Facebook",
+    "continue_with_google": "Continue with Google"
   },
   "forget_password": {
     "appBar_title": "Recover Account",

@@ -1,28 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:pasabahce/constants/app_colors.dart';
 
-class MainTextFormField extends StatelessWidget {
-  const MainTextFormField({
+import '../constants/app_colors.dart';
+
+class PasswordTextFormField extends StatelessWidget {
+  const PasswordTextFormField({
     Key? key,
     required this.controller,
     required this.validator,
     this.hintText = "",
     required this.label,
-    this.isPhone = false,
+    required this.icon,
+    required this.onPressed,
+    required this.isObscure,
+    required this.iconColor,
   }) : super(key: key);
   final TextEditingController controller;
   final Function validator;
   final String hintText;
   final String label;
-  final bool isPhone;
+  final IconData icon;
+  final Function() onPressed;
+  final bool isObscure;
+  final Color iconColor;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
       validator: (value) => validator(value),
-      keyboardType: isPhone ? TextInputType.number : TextInputType.text,
+      keyboardType: TextInputType.visiblePassword,
       cursorColor: AppColors.brown,
+      obscureText: isObscure,
       decoration: InputDecoration(
         label: Text(
           label,
@@ -53,6 +61,14 @@ class MainTextFormField extends StatelessWidget {
         ),
         hintText: hintText,
         hintStyle: const TextStyle(color: Colors.grey),
+        suffixIcon: IconButton(
+          onPressed: onPressed,
+          icon: Icon(
+            icon,
+            size: 16,
+            color: iconColor,
+          ),
+        ),
       ),
     );
   }

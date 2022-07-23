@@ -32,25 +32,27 @@ class IntroScreens extends StatelessWidget {
                   DotesIndicator(cubit: cubit),
                   IntroPageView(cubit: cubit),
                   cubit.isLast == true
-                      ? Column(
-                          children: [
-                            MainButton(
-                              text: "intro.sign_in".tr(),
-                              borderColor: Colors.white,
-                              width: 240,
-                              onTap: () =>
-                                  MagicRouter.navigateTo(const LoginScreen()),
-                            ),
-                            const SizedBox(height: 15),
-                            MainButton(
-                              text: "intro.create_account".tr(),
-                              backgroundColor: AppColors.introColor,
-                              borderColor: Colors.transparent,
-                              width: 240,
-                              onTap: () => MagicRouter.navigateTo(
-                                  const RegisterScreen()),
-                            ),
-                          ],
+                      ? Expanded(
+                          child: Column(
+                            children: [
+                              MainButton(
+                                text: "intro.sign_in".tr(),
+                                borderColor: Colors.white,
+                                width: 235,
+                                onTap: () =>
+                                    MagicRouter.navigateTo(const LoginScreen()),
+                              ),
+                              const SizedBox(height: 10),
+                              MainButton(
+                                text: "intro.create_account".tr(),
+                                backgroundColor: AppColors.introColor,
+                                borderColor: Colors.transparent,
+                                width: 235,
+                                onTap: () => MagicRouter.navigateTo(
+                                    const RegisterScreen()),
+                              ),
+                            ],
+                          ),
                         )
                       : MainButton(
                           text: "intro.start_button".tr(),
