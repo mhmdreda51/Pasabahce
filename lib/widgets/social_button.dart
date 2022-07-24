@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pasabahce/constants/size_config.dart';
 
 class SocialButton extends StatelessWidget {
   const SocialButton({
@@ -42,7 +43,6 @@ class SocialButton extends StatelessWidget {
             padding: EdgeInsets.only(left: 30, right: 30)),
         onPressed: onTap,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Image(
               image: AssetImage(image),
@@ -50,6 +50,7 @@ class SocialButton extends StatelessWidget {
               height: 15,
               color: imageColor,
             ),
+            SizedBox(width: getScreenWidth(15)),
             Text(
               text,
               style: TextStyle(

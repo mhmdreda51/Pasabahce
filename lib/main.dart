@@ -4,10 +4,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:one_context/one_context.dart';
-import 'package:pasabahce/view/Home/Controller/home_cubit.dart';
-import 'package:pasabahce/view/Home/home_screen.dart';
+import 'package:pasabahce/view/Settings/Controller/settings_cubit.dart';
 import 'package:pasabahce/view/intro_screens/intro_screens.dart';
 import 'package:pasabahce/widgets/interner_check_dialog.dart';
+import 'package:pasabahce/widgets/navigation_widget.dart';
 
 import 'core/blocObserver/bloc_observer.dart';
 import 'core/cacheHelper/get_storage_cache_helper.dart';
@@ -26,9 +26,9 @@ void main() async {
     if (user == null) {
       home = IntroScreens();
     } else {
-      home = const HomeScreen();
+      home = const NavigationScreen();
     }
-    home ??= const HomeScreen();
+    home ??= const NavigationScreen();
   });
   //===============================================================
   Bloc.observer = MyBlocObserver();
@@ -60,13 +60,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => HomeCubit()..initializeConnectivity()),
+        BlocProvider(create: (_) => SettingsCubit()..initializeConnectivity()),
       ],
       child: MultiBlocListener(
         listeners: [
-          BlocListener<HomeCubit, HomeState>(listener: (context, state) {
+          BlocListener<SettingsCubit, SettingsState>(
+              listener: (context, state) {
             if (state is InternetDisconnected) {
-              HomeCubit.get(context).isNetDialogShow = true;
+              SettingsCubit.get(context).isNetDialogShow = true;
               print('InternetDisconnected');
               Future.delayed(const Duration(milliseconds: 500), () {
                 //0.5 sec
@@ -78,10 +79,10 @@ class MyApp extends StatelessWidget {
               });
             }
             if (state is InternetConnected) {
-              if (HomeCubit.get(context).isNetDialogShow) {
+              if (SettingsCubit.get(context).isNetDialogShow) {
                 print('InternetConnected');
                 OneContext().popDialog();
-                HomeCubit.get(context).isNetDialogShow = false;
+                SettingsCubit.get(context).isNetDialogShow = false;
               }
             }
           }),

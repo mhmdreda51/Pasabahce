@@ -18,7 +18,8 @@
     "register_button": "اشتراك",
     "continue_with_facebook": "المتابعة بواسطة فيس بوك",
     "continue_with_google": "المتابعة بواسطة جوجل",
-    "sign_in": "تسجيل الدخول"
+    "sign_in": "تسجيل الدخول",
+    "already_have_an_account": "هل لديك حساب؟"
   },
   "login": {
     "appBar_title": "تسجيل الدخول",

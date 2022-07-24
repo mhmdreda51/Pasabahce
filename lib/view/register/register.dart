@@ -12,7 +12,8 @@ import '../../core/router/router.dart';
 import '../../widgets/auth_header.dart';
 import '../../widgets/loading_widget.dart';
 import '../../widgets/main_app_bar.dart';
-import '../Home/home_screen.dart';
+import '../../widgets/main_container.dart';
+import '../../widgets/navigation_widget.dart';
 import 'Componants/register_form.dart';
 import 'Componants/register_social_column.dart';
 import 'Componants/sign_in_row.dart';
@@ -28,7 +29,7 @@ class RegisterScreen extends StatelessWidget {
         listener: (context, state) {
           if (state is SignUpSuccessState) {
             Fluttertoast.showToast(msg: "login.success".tr());
-            MagicRouter.navigateTo(const HomeScreen());
+            MagicRouter.navigateTo(const NavigationScreen());
           }
           if (state is SignUpFailedState) {
             Fluttertoast.showToast(msg: "login.failed".tr());
@@ -40,26 +41,12 @@ class RegisterScreen extends StatelessWidget {
           return state is SignUpLoadingState
               ? const LoadingWidget()
               : Scaffold(
-                  appBar: mainAppBar(title: "register.appBar_title".tr()),
+                  appBar: mainAppBar(
+                      title: "register.appBar_title".tr(), context: context),
                   backgroundColor: Colors.black,
                   body: Padding(
-                    padding: EdgeInsets.only(top: getScreenHeight(15)),
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          topLeft: Radius.circular(20),
-                        ),
-                      ),
-                      padding: EdgeInsets.only(
-                        top: getScreenHeight(30),
-                        bottom: getScreenHeight(30),
-                        right: getScreenWidth(30),
-                        left: getScreenWidth(30),
-                      ),
-                      width: SizeConfig.screenWidth,
-                      height: SizeConfig.screenHeight,
+                    padding: EdgeInsets.only(top: getScreenHeight(20)),
+                    child: MainContainer(
                       child: SingleChildScrollView(
                         child: Form(
                           key: cubit.registerFormKey,

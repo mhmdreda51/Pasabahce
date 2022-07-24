@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pasabahce/core/router/router.dart';
-import 'package:pasabahce/view/Home/home_screen.dart';
 import 'package:pasabahce/view/login/Controller/login_cubit.dart';
 
 import '../../constants/app_colors.dart';
@@ -14,6 +13,8 @@ import '../../widgets/auth_header.dart';
 import '../../widgets/loading_widget.dart';
 import '../../widgets/main_app_bar.dart';
 import '../../widgets/main_button.dart';
+import '../../widgets/main_container.dart';
+import '../../widgets/navigation_widget.dart';
 import 'Componants/login_form.dart';
 import 'Componants/login_social_column.dart';
 import 'Componants/remember_row.dart';
@@ -30,7 +31,7 @@ class LoginScreen extends StatelessWidget {
         listener: (context, state) {
           if (state is LoginSuccessState) {
             Fluttertoast.showToast(msg: "login.success".tr());
-            MagicRouter.navigateTo(const HomeScreen());
+            MagicRouter.navigateTo(const NavigationScreen());
           }
           if (state is LoginFailedState) {
             Fluttertoast.showToast(msg: "login.failed".tr());
@@ -42,26 +43,12 @@ class LoginScreen extends StatelessWidget {
           return state is LoginLoadingState
               ? const LoadingWidget()
               : Scaffold(
-                  appBar: mainAppBar(title: "login.appBar_title".tr()),
+                  appBar: mainAppBar(
+                      title: "login.appBar_title".tr(), context: context),
                   backgroundColor: Colors.black,
                   body: Padding(
-                    padding: EdgeInsets.only(top: getScreenHeight(10)),
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          topLeft: Radius.circular(20),
-                        ),
-                      ),
-                      padding: EdgeInsets.only(
-                        left: getScreenWidth(30),
-                        right: getScreenWidth(30),
-                        top: getScreenHeight(40),
-                        bottom: getScreenHeight(30),
-                      ),
-                      width: SizeConfig.screenWidth,
-                      height: SizeConfig.screenHeight,
+                    padding: EdgeInsets.only(top: getScreenHeight(20)),
+                    child: MainContainer(
                       child: SingleChildScrollView(
                         child: Form(
                           key: cubit.loginFormKey,

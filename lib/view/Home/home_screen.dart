@@ -1,11 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pasabahce/view/Home/Controller/home_cubit.dart';
 
-import '../../core/router/router.dart';
-import '../../widgets/loading_widget.dart';
-import '../login/login_screen.dart';
+import '../../constants/size_config.dart';
+import '../../widgets/main_container.dart';
+import 'Widgets/three_type_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,24 +15,42 @@ class HomeScreen extends StatelessWidget {
     return BlocProvider(
       create: (context) => HomeCubit(),
       child: BlocConsumer<HomeCubit, HomeState>(
-        listener: (context, state) {
-          if (state is SignOutSuccess) {
-            MagicRouter.navigateTo(const LoginScreen());
-            Fluttertoast.showToast(msg: "Sign Out Success");
-          }
-        },
+        listener: (context, state) {},
         builder: (context, state) {
           final cubit = HomeCubit.get(context);
-          return state is SignOutLoading
-              ? const LoadingWidget()
-              : Scaffold(
-                  body: Center(
-                    child: TextButton(
-                      child: Text("Log Out"),
-                      onPressed: cubit.signOut,
-                    ),
+          return Scaffold(
+            appBar: threeTypeAppBar(
+              title: "STORE",
+              actions: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.search,
+                  size: getScreenWidth(18),
+                ),
+              ),
+              leading: IconButton(
+                icon: Icon(
+                  Icons.menu,
+                  size: getScreenWidth(18),
+                ),
+                onPressed: () {},
+              ),
+            ),
+            backgroundColor: Colors.black,
+            body: Padding(
+              padding: EdgeInsets.only(top: getScreenHeight(20)),
+              child: MainContainer(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text("home.brands".tr()),
+                    ],
                   ),
-                );
+                ),
+              ),
+            ),
+          );
         },
       ),
     );

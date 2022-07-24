@@ -16,6 +16,7 @@ class IntroScreens extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
+
     return BlocProvider(
       create: (context) => IntroScreensCubit(),
       child: BlocBuilder<IntroScreensCubit, IntroScreensState>(
