@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../constants/app_colors.dart';
+import '../../../core/cacheHelper/get_storage_cache_helper.dart';
 
 part 'login_state.dart';
 
@@ -55,6 +56,7 @@ class LoginCubit extends Cubit<LoginState> {
         email: email.trim().toLowerCase().toString(),
         password: password.trim().toLowerCase().toString(),
       );
+      GetStorageCacheHelper.cacheUid(uid: userCredential.user!.uid);
       print(userCredential.user);
       emit(LoginSuccessState());
     } on FirebaseAuthException catch (e) {

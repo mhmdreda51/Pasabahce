@@ -5,12 +5,6 @@ abstract class SettingsState {}
 
 class SettingsInitial extends SettingsState {}
 
-class SignOutLoading extends SettingsState {}
-
-class SignOutSuccess extends SettingsState {}
-
-class SignOutFailed extends SettingsState {}
-
 class CheckConnectionLoading extends SettingsState {}
 
 class InternetConnected extends SettingsState {}

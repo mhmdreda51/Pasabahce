@@ -31,6 +31,8 @@ dependencies:
   flutter_svg: any
   url_launcher: any
   one_context: ^1.1.1
+  image_picker: ^0.8.4+4
+  firebase_storage: ^10.3.3
 
 dev_dependencies:
   flutter_test:

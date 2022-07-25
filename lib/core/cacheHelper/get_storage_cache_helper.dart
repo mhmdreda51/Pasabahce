@@ -1,5 +1,7 @@
 import 'package:get_storage/get_storage.dart';
 
+import '../../view/register/Models/user_model.dart';
+
 class GetStorageCacheHelper {
   static final GetStorage _appBox = GetStorage();
 
@@ -60,4 +62,27 @@ class GetStorageCacheHelper {
   static bool hasData({required String key}) {
     return _appBox.hasData(key);
   }
+  //===============================================================
+
+  static Future<void> cacheUid({
+    required String uid,
+  }) async {
+    await _cacheUid(uid);
+  }
+
+  static Future<void> _cacheUid(String uid) async =>
+      await _appBox.write('uid', uid);
+
+  static String? get getUid => _appBox.read('uid');
+  //===============================================================
+  static Future<void> cacheUserModel({
+    required UserModel userModel,
+  }) async {
+    await _cacheUserModel(userModel);
+  }
+
+  static Future<void> _cacheUserModel(UserModel userModel) async =>
+      await _appBox.write('userModel', userModel);
+
+  static UserModel? get getUserModel => _appBox.read('UserModel');
 }

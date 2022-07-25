@@ -1,17 +1,19 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/size_config.dart';
-import '../core/router/router.dart';
+import '../constants/size_configuter.dart';
 
-AppBar mainAppBar({required String title, required BuildContext context}) {
+AppBar mainAppBar({
+  required String title,
+  required BuildContext context,
+  required Widget actions,
+  required Widget leading,
+}) {
   return AppBar(
     backgroundColor: Colors.black,
     elevation: 0.0,
-    leading: IconButton(
-      onPressed: () => MagicRouter.pop(),
-      icon: Icon(Icons.arrow_back_sharp, size: getScreenWidth(20)),
-    ),
+    leading: leading,
+    actions: [actions],
     title: Padding(
       padding: EdgeInsets.only(
         right: context.locale.languageCode == 'en'

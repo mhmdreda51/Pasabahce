@@ -44,7 +44,15 @@ class LoginScreen extends StatelessWidget {
               ? const LoadingWidget()
               : Scaffold(
                   appBar: mainAppBar(
-                      title: "login.appBar_title".tr(), context: context),
+                    title: "login.appBar_title".tr(),
+                    context: context,
+                    leading: IconButton(
+                      onPressed: () => MagicRouter.pop(),
+                      icon: Icon(Icons.arrow_back_sharp,
+                          size: getScreenWidth(20)),
+                    ),
+                    actions: const SizedBox(),
+                  ),
                   backgroundColor: Colors.black,
                   body: Padding(
                     padding: EdgeInsets.only(top: getScreenHeight(20)),

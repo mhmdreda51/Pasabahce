@@ -118,10 +118,17 @@
     "no_results": "No results found!"
   },
   "settings": {
-    "appBar_title": "Settings",
-    "notifications": "Notifications",
-    "lang": "Language",
-    "country": "Country"
+    "appBar_title": "SETTINGS & MORE",
+    "Order_History": "Order History",
+    "My_Addresses": "My Addresses",
+    "My_Cards": "My Cards",
+    "Vouchers": "Vouchers",
+    "Nearby_Stores": "Nearby Stores",
+    "Latest_Articles": "Latest Articles",
+    "Settings": "Settings",
+    "log_out": "log out",
+    "log_out_Success": "Sign Out Success",
+    "upload_profile_success": "Upload Profile image Successfully"
   },
   "filter": {
     "popular_filters": "Popular filters",

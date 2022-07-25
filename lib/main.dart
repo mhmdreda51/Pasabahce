@@ -4,8 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:one_context/one_context.dart';
-import 'package:pasabahce/view/Settings/Controller/settings_cubit.dart';
 import 'package:pasabahce/view/intro_screens/intro_screens.dart';
+import 'package:pasabahce/view/settings/Controller/settings_cubit.dart';
 import 'package:pasabahce/widgets/interner_check_dialog.dart';
 import 'package:pasabahce/widgets/navigation_widget.dart';
 

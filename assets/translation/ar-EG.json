@@ -119,10 +119,19 @@
     "no_results": "لم يتم العثور على نتائج!"
   },
   "settings": {
-    "appBar_title": "الإعدادات",
-    "notifications": "الإشعارات",
-    "lang": "اللغة",
-    "country": "البلد"
+    "appBar_title": "الإعدادات والمزيد",
+    "Order_History": "تاريخ الطلبات",
+    "My_Addresses": "عناويني",
+    "My_Cards": "بطاقاتي",
+    "Vouchers": "القسائم",
+    "Nearby_Stores": "المتاجر القريبة",
+    "Latest_Articles": "أحدث المقالات",
+    "Settings": "إعدادات",
+    "log_out": "تسجيل خروج",
+    "log_out_Success": "تم تسجيل الخروج بنجاح",
+    "upload_profile_success":"تحميل صورة الملف الشخصي بنجاح"
+
+
   },
   "filter": {
     "popular_filters": "تصنيفات شائعة",

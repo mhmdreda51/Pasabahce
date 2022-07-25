@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
-import '../../Settings/settings_screen.dart';
+import '../../Account/account_screen.dart';
 import '../home_screen.dart';
 
 part 'home_state.dart';
@@ -15,6 +15,7 @@ class HomeCubit extends Cubit<HomeState> {
   static HomeCubit get(context) => BlocProvider.of(context);
 
   //===============================================================
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
 //===============================================================
 
@@ -27,7 +28,7 @@ class HomeCubit extends Cubit<HomeState> {
     const Scaffold(),
     const Scaffold(),
     const Scaffold(),
-    const SettingsScreen(),
+    const AccountScreen(),
   ];
 
   void changeBottomViews(int index) {

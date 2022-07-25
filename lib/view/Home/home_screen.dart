@@ -5,7 +5,7 @@ import 'package:pasabahce/view/Home/Controller/home_cubit.dart';
 
 import '../../constants/size_config.dart';
 import '../../widgets/main_container.dart';
-import 'Widgets/three_type_app_bar.dart';
+import '../../widgets/three_type_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -28,13 +28,7 @@ class HomeScreen extends StatelessWidget {
                   size: getScreenWidth(18),
                 ),
               ),
-              leading: IconButton(
-                icon: Icon(
-                  Icons.menu,
-                  size: getScreenWidth(18),
-                ),
-                onPressed: () {},
-              ),
+              leading: const SizedBox(),
             ),
             backgroundColor: Colors.black,
             body: Padding(

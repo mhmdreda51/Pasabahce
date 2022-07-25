@@ -40,7 +40,8 @@ class SocialButton extends StatelessWidget {
               side: BorderSide(color: borderColor),
             ),
             backgroundColor: backgroundColor,
-            padding: EdgeInsets.only(left: 30, right: 30)),
+            padding: EdgeInsets.only(
+                left: getScreenWidth(20), right: getScreenWidth(20))),
         onPressed: onTap,
         child: Row(
           children: [

@@ -8,6 +8,8 @@ import 'package:meta/meta.dart';
 import 'package:pasabahce/constants/app_colors.dart';
 
 import '../../../constants/strings.dart';
+import '../../../core/cacheHelper/get_storage_cache_helper.dart';
+import '../Models/user_model.dart';
 
 part 'register_state.dart';
 
@@ -30,7 +32,7 @@ class RegisterCubit extends Cubit<RegisterState> {
   bool isPassword = true;
   IconData suffix = Icons.visibility_outlined;
   Color iconColor = Colors.grey;
-
+  UserModel? userModel;
 //===============================================================
   void changePasswordVisibility() {
     isPassword = !isPassword;
@@ -69,7 +71,9 @@ class RegisterCubit extends Cubit<RegisterState> {
         "userWish": [],
         "userCart": [],
         "createdAt": Timestamp.now(),
+        "image": "",
       });
+      GetStorageCacheHelper.cacheUid(uid: uid);
       print(userCredential.user);
       emit(SignUpSuccessState());
     } on FirebaseAuthException catch (e) {

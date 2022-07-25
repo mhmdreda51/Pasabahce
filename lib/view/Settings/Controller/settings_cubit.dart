@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:bloc/bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,24 +13,6 @@ class SettingsCubit extends Cubit<SettingsState> {
 
 //===============================================================
   static SettingsCubit get(context) => BlocProvider.of(context);
-
-//===============================================================
-  FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-
-  void signOut() async {
-    emit(SignOutLoading());
-    try {
-      await firebaseAuth.signOut();
-      emit(SignOutSuccess());
-    } on FirebaseException catch (e) {
-      debugPrint(e.toString());
-      emit(SignOutFailed());
-    } catch (e, s) {
-      debugPrint(e.toString());
-      debugPrint(s.toString());
-      emit(SignOutFailed());
-    }
-  }
 
 //===============================================================
   final _connectivity = Connectivity();
@@ -111,6 +92,11 @@ class SettingsCubit extends Cubit<SettingsState> {
     notificationToggle = value;
     emit(ChangeNotificationToggle());
   }
+
+//===============================================================
+
+//===============================================================
+
 //===============================================================
 
 }
