@@ -7,7 +7,7 @@ import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:meta/meta.dart'e_storage;
+import 'package:meta/meta.dart';
 
 import '../../../constants/strings.dart';
 import '../../register/Models/user_model.dart';
@@ -19,6 +19,7 @@ class AccountCubit extends Cubit<AccountState> {
 
 //===============================================================
   static AccountCubit get(context) => BlocProvider.of(context);
+
 //===============================================================
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 
@@ -36,16 +37,18 @@ class AccountCubit extends Cubit<AccountState> {
       emit(SignOutFailed());
     }
   }
+
 //===============================================================
   File? image;
 
   void pickImageFromGallery() async {
     final pickedImage =
-    await ImagePicker().pickImage(source: ImageSource.gallery);
+        await ImagePicker().pickImage(source: ImageSource.gallery);
     if (pickedImage == null) return;
     image = File(pickedImage.path);
     emit(PickImageFromGallerySuccess());
   }
+
 //===============================================================
   Future<dynamic> uploadProfileImage() async {
     emit(UserImageUpdateLoadingState());
@@ -76,6 +79,7 @@ class AccountCubit extends Cubit<AccountState> {
       emit(SocialUploadProfileImageFailedState());
     });
   }
+
 //===============================================================
   UserModel? userModel;
 
@@ -100,6 +104,5 @@ class AccountCubit extends Cubit<AccountState> {
 //===============================================================
 //===============================================================
 //===============================================================
-
 
 }

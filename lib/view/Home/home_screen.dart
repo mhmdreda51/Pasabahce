@@ -2,10 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pasabahce/view/Home/Controller/home_cubit.dart';
+import 'package:pasabahce/widgets/main_app_bar.dart';
 
 import '../../constants/size_config.dart';
 import '../../widgets/main_container.dart';
-import '../../widgets/three_type_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,7 +19,8 @@ class HomeScreen extends StatelessWidget {
         builder: (context, state) {
           final cubit = HomeCubit.get(context);
           return Scaffold(
-            appBar: threeTypeAppBar(
+            appBar: mainAppBar(
+              context: context,
               title: "STORE",
               actions: IconButton(
                 onPressed: () {},

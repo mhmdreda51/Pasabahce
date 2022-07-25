@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/size_configuter.dart';
+import '../constants/size_config.dart';
 
 AppBar mainAppBar({
   required String title,
