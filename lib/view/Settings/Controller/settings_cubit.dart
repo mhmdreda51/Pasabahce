@@ -78,6 +78,8 @@ class SettingsCubit extends Cubit<SettingsState> {
 
 //===============================================================
   bool notificationToggle = true;
+  bool newslettersToggle = true;
+
   String langDropdownValue = 'English';
   List<String> langList = ['English', 'العربية'];
 
@@ -93,6 +95,12 @@ class SettingsCubit extends Cubit<SettingsState> {
     emit(ChangeNotificationToggle());
   }
 
+  //===============================================================
+
+  changeNewslettersToggle({required bool value}) {
+    newslettersToggle = value;
+    emit(ChangeNewslettersToggle());
+  }
 //===============================================================
 
 //===============================================================

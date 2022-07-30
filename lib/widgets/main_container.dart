@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:pasabahce/constants/size_config.dart';
 
 class MainContainer extends StatelessWidget {
-  const MainContainer({Key? key, required this.child}) : super(key: key);
+  const MainContainer({
+    Key? key,
+    required this.child,
+    this.paddingLeft = 30,
+    this.paddingRight = 30,
+  }) : super(key: key);
   final Widget child;
+  final double paddingLeft;
+  final double paddingRight;
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +23,8 @@ class MainContainer extends StatelessWidget {
         ),
       ),
       padding: EdgeInsets.only(
-        left: getScreenWidth(30),
-        right: getScreenWidth(30),
+        left: paddingLeft,
+        right: paddingRight,
         top: getScreenHeight(40),
         bottom: getScreenHeight(30),
       ),

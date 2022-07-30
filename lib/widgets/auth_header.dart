@@ -16,6 +16,7 @@ class AuthHeader extends StatelessWidget {
       children: [
         Text(
           title,
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: getScreenWidth(28),
             color: Colors.black,

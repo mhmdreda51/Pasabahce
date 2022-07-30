@@ -57,7 +57,7 @@ class LoginCubit extends Cubit<LoginState> {
         password: password.trim().toLowerCase().toString(),
       );
       GetStorageCacheHelper.cacheUid(uid: userCredential.user!.uid);
-      print(userCredential.user);
+      print(userCredential.user!.getIdToken());
       emit(LoginSuccessState());
     } on FirebaseAuthException catch (e) {
       emit(LoginFailedState(msg: e.message.toString()));

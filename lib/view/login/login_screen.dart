@@ -51,7 +51,6 @@ class LoginScreen extends StatelessWidget {
                       icon: Icon(Icons.arrow_back_sharp,
                           size: getScreenWidth(20)),
                     ),
-                    actions: const SizedBox(),
                   ),
                   backgroundColor: Colors.black,
                   body: Padding(

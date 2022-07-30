@@ -12,4 +12,7 @@ class AppColors {
 
   static const Color redGradientColor = Color(0xFFE17D72);
   static const Color blackColor = Colors.black;
+  static const Color brownGradientColor = Color(0xFFB86518);
+  static const Color darkBrownGradientColor = Color(0xFF272833);
+  static const Color detailsAppBarColor = Color(0xFFF7F7F7);
 }

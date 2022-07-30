@@ -13,4 +13,6 @@ class InternetDisconnected extends SettingsState {}
 
 class ChangeNotificationToggle extends SettingsState {}
 
+class ChangeNewslettersToggle extends SettingsState {}
+
 class ChangeLangDropDown extends SettingsState {}

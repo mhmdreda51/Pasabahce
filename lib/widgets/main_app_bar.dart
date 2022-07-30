@@ -6,21 +6,20 @@ import '../constants/size_config.dart';
 AppBar mainAppBar({
   required String title,
   required BuildContext context,
-  required Widget actions,
   required Widget leading,
 }) {
   return AppBar(
     backgroundColor: Colors.black,
     elevation: 0.0,
     leading: leading,
-    actions: [actions],
+    centerTitle: true,
     title: Padding(
       padding: EdgeInsets.only(
         right: context.locale.languageCode == 'en'
-            ? getScreenWidth(35)
+            ? getScreenWidth(45)
             : getScreenWidth(0),
         left: context.locale.languageCode == 'ar'
-            ? getScreenWidth(35)
+            ? getScreenWidth(45)
             : getScreenWidth(0),
       ),
       child: Center(

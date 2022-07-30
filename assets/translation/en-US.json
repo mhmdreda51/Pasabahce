@@ -50,17 +50,30 @@
     "make_sure": "Make sure the two passwords are the same"
   },
   "home": {
-    "search_bar": "what are you looking for?",
-    "popular_food": "Popular Food",
-    "view_more": "View more",
-    "brands": "Popular brands near you",
-    "special_offers": "Special Offers",
-    "delivery": "Delivery :",
-    "nothing": "Nothing to show here!"
+    "appbar_title": "STORE",
+    "home_subtitle": "Find the perfect watch for your wrist",
+    "home_title": "Ottoman Collection",
+    "categories": "Categories",
+    "top_deals": "Top deals",
+    "featured_products": "Featured products",
+    "search_by_brand": "Search by brand",
+    "nothing": "Nothing to show here!",
+    "see_all": "See All"
   },
-  "food": {
-    "all_stores": "All stores",
-    "no_results": "No results found"
+  "product_details": {
+    "appbar_title": "Product details",
+    "add_to_cart": "Add to card",
+    "Description": "Description",
+    "Specifications": "Specifications",
+    "Reviews": "Reviews",
+    "similar_products": "Similar products",
+    "Case_diameter": "Case diameter",
+    "Product_Origin": "Product Origin",
+    "Production_method": "Production method",
+    "Material": "Material",
+    "Strap_color": "Strap color",
+    "Helpful": "Helpful?",
+    "Report": "Report"
   },
   "restaurant": {
     "info": "Info",
@@ -119,6 +132,7 @@
   },
   "settings": {
     "appBar_title": "SETTINGS & MORE",
+    "settings_title": "SETTINGS",
     "Order_History": "Order History",
     "My_Addresses": "My Addresses",
     "My_Cards": "My Cards",
@@ -128,7 +142,16 @@
     "Settings": "Settings",
     "log_out": "log out",
     "log_out_Success": "Sign Out Success",
-    "upload_profile_success": "Upload Profile image Successfully"
+    "upload_profile_success": "Upload Profile image Successfully",
+    "notifications": "Receive Notifications",
+    "lang": "Language",
+    "password": "Password",
+    "Change": "Change",
+    "location": "Location",
+    "newsletters": "Receive Newsletters",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "personal_information": "Personal Information"
   },
   "filter": {
     "popular_filters": "Popular filters",
