@@ -1,0 +1,281 @@
+{
+  "intro": {
+    "start_button": "Next",
+    "sign_in": "Sign in",
+    "create_account": "Create account"
+  },
+  "phone_auth": {
+    "appBar_title": "Login with phone number",
+    "phone": "Phone number",
+    "login": "Login"
+  },
+  "register": {
+    "create_your_account": "Create your account",
+    "register_button": "Sign up",
+    "appBar_title": "Register",
+    "email": "Email",
+    "password": "Password",
+    "user_name": "Username",
+    "create_account": "Create account",
+    "phone": "Phone number",
+    "register_text": "After your registration is complete, you can see our opportunity products.",
+    "success": "Register success.",
+    "continue_with_facebook": "Continue with Facebook",
+    "continue_with_google": "Continue with Google",
+    "already_have_an_account": "Already have an account?",
+    "sign_in": "Sign in"
+  },
+  "login": {
+    "appBar_title": "Login",
+    "login_title": "Let’s sign you in",
+    "login_subtitle": "Welcome back, you’ve been missed!",
+    "forgot_password": "Forgot password?",
+    "create_account": "Create an account",
+    "login": "Sign in",
+    "sign_up": "Sign up",
+    "email_or_username": "Username or email",
+    "password": "Password",
+    "success": "Login success.",
+    "failed": "Email or password is wrong.",
+    "no_account": "Don't have account?",
+    "remember_me": "Remember me",
+    "continue_with_facebook": "Continue with Facebook",
+    "continue_with_google": "Continue with Google",
+    "continue_with_phone": "Continue with Phone"
+  },
+  "forget_password": {
+    "appBar_title": "Recover Account",
+    "reset_your_password": "Reset your password",
+    "email": "Enter your email here"
+  },
+  "reset_password": {
+    "appBar_title": "Reset Password",
+    "confirm_new_password": "Confirm new password",
+    "confirm": "Confirm",
+    "new_password": "New password",
+    "make_sure": "Make sure the two passwords are the same"
+  },
+  "home": {
+    "appbar_title": "STORE",
+    "home_subtitle": "Find the perfect watch for your wrist",
+    "home_title": "Ottoman Collection",
+    "categories": "Categories",
+    "top_deals": "Top deals",
+    "featured_products": "Featured products",
+    "search_by_brand": "Search by brand",
+    "nothing": "Nothing to show here!",
+    "see_all": "See All"
+  },
+  "product_details": {
+    "appbar_title": "Product details",
+    "add_to_cart": "Add to card",
+    "Description": "Description",
+    "Specifications": "Specifications",
+    "Reviews": "Reviews",
+    "similar_products": "Similar products",
+    "Case_diameter": "Case diameter",
+    "Product_Origin": "Product Origin",
+    "Production_method": "Production method",
+    "Material": "Material",
+    "Strap_color": "Strap color",
+    "Helpful": "Helpful?",
+    "Report": "Report"
+  },
+  "restaurant": {
+    "info": "Info",
+    "reviews": "Reviews",
+    "offer_of_the_restaurant": " Offer of the store",
+    "close_at": "Close at",
+    "open_at": "Open at",
+    "delivery": "Delivery fees :",
+    "egp": "EGP",
+    "price": "Price : "
+  },
+  "order": {
+    "cart_button_title": "Add to cart",
+    "add_notes": "Add notes ...",
+    "choose_size": "Choose Size",
+    "extras": "Extras",
+    "write": "Write any special things you want to do.",
+    "optional": "(Optional)"
+  },
+  "checkout": {
+    "appBar_title": "Check out",
+    "full_name": "Full name",
+    "phone_number": "Phone number",
+    "button_title": "Next",
+    "address": "Address"
+  },
+  "payment_done": {},
+  "notification": {
+    "appBar_title": "Notifications"
+  },
+  "vouchers": {
+    "appBar_title": "Vouchers",
+    "active": "Active",
+    "used": "Used",
+    "expired": "Expired",
+    "no_vouchers_available": "No vouchers available",
+    "voucher_text": "You can get vouchers by redeeming your rewards points",
+    "all": "All",
+    "discount": "Discount",
+    "get_your_voucher": "Get your voucher",
+    "use_the_code": "Use the code",
+    "start_at": "Start at",
+    "end_at": "End at"
+  },
+  "help": {
+    "appBar_title": "Help",
+    "title": "How can we help?",
+    "hi": "Hi"
+  },
+  "search": {
+    "search_bar": "what are you looking for?",
+    "popular_search": "Popular Search",
+    "start_search": "Start searching",
+    "search_empty": "Search must not be empty",
+    "no_results": "No results found!"
+  },
+  "settings": {
+    "appBar_title": "SETTINGS & MORE",
+    "settings_title": "SETTINGS",
+    "Order_History": "Order History",
+    "My_Addresses": "My Addresses",
+    "My_Cards": "My Cards",
+    "Vouchers": "Vouchers",
+    "Nearby_Stores": "Nearby Stores",
+    "Latest_Articles": "Latest Articles",
+    "Settings": "Settings",
+    "log_out": "log out",
+    "log_out_Success": "Sign Out Success",
+    "upload_profile_success": "Upload Profile image Successfully",
+    "notifications": "Receive Notifications",
+    "lang": "Language",
+    "password": "Password",
+    "Change": "Change",
+    "location": "Location",
+    "newsletters": "Receive Newsletters",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "personal_information": "Personal Information"
+  },
+  "filter": {
+    "Select_categories": "Select categories",
+    "Sort_watches_by": "Sort watches by",
+    "Select_a_price_range": "Select a price range",
+    "appBar_title": "Filter & Sort",
+    "apply": "Apply",
+    "clear_filters": "Clear Filters"
+  },
+  "restaurant_info": {
+    "appBar_title": "Information",
+    "restaurant_area": "Restaurant area",
+    "minimum_order": "Minimum order",
+    "delivery_fee": "Delivery fee",
+    "preorder": "Pre-order",
+    "payment_options": "Payment options",
+    "opining_hours": "Opening hours",
+    "rate": "Ratings",
+    "taxes": "Taxes"
+  },
+  "reviews": {
+    "appBar_title": "Reviews",
+    "order_packing": "Order packaging",
+    "value_for_money": "Value for money",
+    "delivery_time": "Delivery time",
+    "quality_of_food": "Quality of food",
+    "rating_and_reviews": "Rating& Reviews",
+    "read_more_reviews": "Read more reviews",
+    "based": "Based on ",
+    "review": "review"
+  },
+  "offers": {
+    "appBar_title": "Offers",
+    "more_details": "More details",
+    "no_offers": "sorry, No offers now!"
+  },
+  "orders": {
+    "appBar_title": "Orders",
+    "recent": "Recent orders",
+    "old": "Old orders",
+    "total": "Total : ",
+    "payment": "Payment : ",
+    "state": "State : ",
+    "no_orders": "No orders here"
+  },
+  "user_details": {
+    "appBar_title": "User Details",
+    "email": "Email",
+    "phone_number": "Phone Number",
+    "password": "Password",
+    "edit": "Edit",
+    "address": "Address",
+    "change_password": "Change Password",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "security_information": "Security information",
+    "update": "Update",
+    "change_area": "Change Area",
+    "your_area": "Your area : ",
+    "info_updated": "Info updated Successfully.",
+    "image_updated": "Image updated Successfully."
+  },
+  "filter_result": {
+    "search_bar": "what are you looking for?"
+  },
+  "drawer": {
+    "contact_us": "Contact Us",
+    "log_out": "Log out",
+    "about_us": "About Us",
+    "get_help": "Get Help",
+    "vouchers": "Vouchers",
+    "payment": "Payment",
+    "notifications": "Notification",
+    "offers": "Offers",
+    "your_orders": "Your Orders",
+    "location": "Location",
+    "home": "Home",
+    "profile": "Profile",
+    "login": "Login",
+    "logout": "Logout",
+    "logout_success": "Logout successfully."
+  },
+  "cart": {
+    "appBar_title": "Cart",
+    "order_details": "Order details",
+    "delivery_price": "Delivery price :",
+    "special_services": "special services:",
+    "total": "Total",
+    "checkout_button_title": "Check out",
+    "add_item_button_title": "Add Item",
+    "no_orders": "No orders in cart."
+  },
+  "validation": {
+    "error_wrong": "Something went wrong!",
+    "enter_txt": "Enter Your Phone number",
+    "enterPhoneVer": "Please enter you phone correctly",
+    "wrong_code": "Code is Not correct!",
+    "enter_sms": "Enter SMS verification code",
+    "password_ver": "Please enter your password correctly",
+    "enter_ver_invalid": "Please enter you email correctly",
+    "enter_ver": "Please enter you email",
+    "enter_name_ver": "Please enter you Full Name"
+  },
+  "change_password": {
+    "appBar_title": "Change Password",
+    "change_password": "Change Password",
+    "old_password": "Old password",
+    "new_password": "New password",
+    "confirm_new_password": "Confirm new password",
+    "password_update_success": "Password updated successfully",
+    "wrong_password": "Wrong password",
+    "some_error": "Some error happened"
+  },
+  "loading_widget": {
+    "loading": "loading"
+  },
+  "connectivity": {
+    "not_net_title": "No internet connection",
+    "not_net_msg": "Please check your internet connection as you can enjoy using app normally,This warning will disappear when you reconnect to the Internet"
+  }
+}

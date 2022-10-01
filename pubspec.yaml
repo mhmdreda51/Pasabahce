@@ -1,0 +1,84 @@
+name: pasabahcee
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  flutter_bloc: null
+  flutter_facebook_auth: ^4.4.0+1
+  flutter_local_notifications: ^9.7.1
+  flutter_rating_bar: ^4.0.1
+  flutter_signin_button: ^2.0.0
+  flutter_svg: any
+  fluttertoast: ^8.0.8
+  font_awesome_flutter: ^9.2.0
+  get_it: ^7.2.0
+  get_storage: ^2.0.3
+  google_maps_flutter: null
+  google_sign_in: ^5.0.2
+  image_picker: ^0.8.4+4
+  location: null
+  one_context: ^1.1.1
+  pay: ^1.0.6
+  pin_code_fields: ^7.3.0
+  provider: ^5.0.0
+  shared_preferences: ^2.0.8
+  shimmer: ^2.0.0
+  smooth_page_indicator: ^1.0.0+2
+  url_launcher: any
+  uuid: ^3.0.6
+  badges: ^2.0.3
+  cached_network_image: ^3.2.1
+  cloud_firestore: ^2.2.0
+  connectivity_plus: ^2.3.5
+  dartz: ^0.10.1
+  dio: ^4.0.0
+  easy_localization: ^3.0.1
+  equatable: null
+  firebase_auth: ^1.1.0
+  firebase_messaging: ^12.0.0
+  firebase_storage: ^10.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_app_name: ^0.1.0
+  flutter_launcher_icons: ^0.10.0
+  flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.2.10+1
+
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/logo.png
+  color_dark: "#000000"
+  image_dark: assets/images/Gulcehre_ibrik.png
+  android: true
+  ios: true
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+flutter_app_name:
+  name: "Pasabahce"
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/translation/
+

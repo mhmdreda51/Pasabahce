@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "935607995991",
+    "project_id": "pasabahce-d1741",
+    "storage_bucket": "pasabahce-d1741.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935607995991:android:221365aaaed3bc877a9d12",
+        "android_client_info": {
+          "package_name": "com.example.pasabahce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935607995991-u5p075vl5n0m1ugsjrk5lp0qkek9ev2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pasabahce",
+            "certificate_hash": "d5a223f478efdb8928f26e4ac0d24db5fbd06a7e"
+          }
+        },
+        {
+          "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRvo_1lWMdDPna-A3qyIYSs6RNyOeKEY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "935607995991-i1rkjhe95bq7fs89skdr0m04nmjpvfhd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pasabahce"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935607995991:android:d66acab06e2af9e07a9d12",
+        "android_client_info": {
+          "package_name": "com.pasabahcee.pasabahcee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRvo_1lWMdDPna-A3qyIYSs6RNyOeKEY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935607995991-j5l2iekj6434r3pf65r22gqee23fq74l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "935607995991-i1rkjhe95bq7fs89skdr0m04nmjpvfhd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pasabahce"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

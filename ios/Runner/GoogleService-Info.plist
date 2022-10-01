@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>935607995991-dgbd3q71rlcht2r4sd9aneaota7ha0bg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.935607995991-dgbd3q71rlcht2r4sd9aneaota7ha0bg</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>935607995991-u5p075vl5n0m1ugsjrk5lp0qkek9ev2a.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBWI7LWUZrbl96H3GXRmQeF417T-EDUi88</string>
+	<key>GCM_SENDER_ID</key>
+	<string>935607995991</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pasabahcee.pasabahcee</string>
+	<key>PROJECT_ID</key>
+	<string>pasabahce-d1741</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pasabahce-d1741.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:935607995991:ios:6d10dd6675d214ab7a9d12</string>
+</dict>
+</plist>
